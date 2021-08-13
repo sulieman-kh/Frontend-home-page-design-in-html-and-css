@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <title>Frontend | home page design in html and css</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+    background-image: linear-gradient(0deg, rgb(2 0 36 / 28%) 0%, rgb(163 80 133 / 47%) 35%, rgb(151 174 179 / 32%) 100%), url(https://images.unsplash.com/photo-1540387136263-58c80869e856?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    margin: 35px auto;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .contentP {
+    background-color: rgb(84 230 175 / 71%);
+    height: initial;
+    width: 521px;
+    padding-top: initial;
+    box-sizing: border-box;
+    margin-top: -36px;
+    position: relative;
+    border-radius: 30px;
+    margin-left: 10px;
+  }
+
+  .content-h1 {
+    margin-inline-start: 11px;
+    margin-bottom: 28px;
+    margin-top: -26px;
+  }
+
+  .main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-left: 10%;
+    height: 100vh;
+  }
+
+  .logo {
+    margin-top: 86px;
+    width: 167px;
+    border-radius: 30px;
+  }
+
+  .content {
+    background-color: rgb(39 18 28 / 66%);
+    height: 510px;
+    width: 723px;
+    padding-top: 2em;
+    box-sizing: border-box;
+    margin-top: 12px;
+    position: relative;
+    border-radius: 30px;
+  }
+
+  h1 {
+    font-weight: lighter;
+    font-size: 60px;
+    color: #54E6AF;
+  }
+
+  h1 span {
+    color: white;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 28px;
+    width: 62%;
+    margin-left: 27px;
+    color: #2c344b;
+  }
+
+  input {
+    height: 56px;
+    width: 427px;
+    border: none;
+    border-radius: 30px;
+    background-color: #2C344B;
+    box-sizing: border-box;
+    padding-left: 32px;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    margin-left: 10px;
+  }
+
+  button {
+    height: 46px;
+    border-radius: 30px;
+    margin-left: -170px;
+    border: none;
+    background-color: #54E6AF;
+    width: 162px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .fb {
+    color: #00344c;
+    background: rgb(84 230 175);
+  }
+
+  .gg {
+    color: #00344c;
+    background: rgb(84 230 175);
+  }
+
+  i.fab.fa-google {
+    color: #ea4335;
+  }
+
+  .btnx {
+    width: 35%;
+    margin-top: 12px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    border-radius: 28px;
+    margin-left: 107px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #B3FFE2;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .logos {
+    margin-top: 40px;
+  }
+
+  .logos img {
+    margin-right: 40px;
+  }
+</style>
+
+<body>
+  <div class="main">
+    <img src="./logo.png" alt="Logo" class="logo">
+    <div class="content">
+      <div class="content-h1">
+        <h1>BEST HOME DECORATING <span>IDEAS.</span></h1>
+      </div>
+      <div class="contentP">
+        <p>By using the psychology of interior design, you can easily become more comfortable in your home. Small
+          changes to colors, layout, and fabrics can easily improve your mood and evoke positive feelings.</p>
+      </div>
+      <div>
+        <div>
+          <form>
+            <input placeholder="Email address">
+            <button type="submit">Request access</button>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col col-xl">
+            <a href="" class="btn btn-block btn-outline-primary btnx fb"> <i class="fab fa-facebook-f"></i> Login via
+              facebook</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-xl">
+            <a href="" class="btn btn-block btn-outline-info btnx gg"> <i class="fab fa-google"></i> Login via
+              Google</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
